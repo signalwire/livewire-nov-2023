@@ -78,6 +78,7 @@ app.post("/", async (req, res) => {
 app.listen(PORT, async () => {
   console.log(`Example app listening on port ${PORT}`);
 
+  // Note: for demo purposes only. Disable if ngrok is not needed.
   const url = await ngrok.connect({
     configPath: NGROK_CONF_FILE,
     addr: PORT,
